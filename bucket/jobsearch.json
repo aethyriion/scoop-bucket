@@ -1,0 +1,24 @@
+{
+    "version": "0.3.0",
+    "description": "Startup-focused job search pipeline and TUI",
+    "homepage": "https://github.com/aethyriion/jobsearch",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/aethyriion/jobsearch/releases/download/v0.3.0/jobsearch-v0.3.0-x86_64-pc-windows-msvc.zip",
+            "hash": "3cecb80e4fbb6a398417145c6cce26bc254f3852380ec6bb7180b0c8047e2fd9",
+            "extract_dir": "jobsearch-v0.3.0-x86_64-pc-windows-msvc"
+        }
+    },
+    "bin": "jobsearch.exe",
+    "notes": "Run 'jobsearch init' once to write the default config.",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/aethyriion/jobsearch/releases/download/v$version/jobsearch-v$version-x86_64-pc-windows-msvc.zip",
+                "extract_dir": "jobsearch-v$version-x86_64-pc-windows-msvc"
+            }
+        }
+    }
+}
